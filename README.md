@@ -34,7 +34,14 @@ It has colors:
 
 ## Installation:
 Get an OpenAI API key and put it in env variable `$OPENAI_API_KEY`. I have 
-`export OPENAI_API_KEY="sk-<the key>"` in my `.bashrc`. Then run the `ai.py` script. 
+`export OPENAI_API_KEY="sk-<the key>"` in my `.bashrc`. Then run the `openai_prompt.py` script. I haven't added a requirements.txt, but it's `colorama` and `openai`. Do `pip install colorama openai`. I renamed the script to `ai`, made it executable and put in somewhere in PATH:
+
+```bash
+mkdir -p ~/.local/bin
+# Add `export PATH=~/.local/bin:$PATH` to .bashrc
+chmod a+x openai_prompt.py
+ln -s $(pwd)/openai_prompt.py ~/.local/bin/ai
+```
 
 ## Prompt
 Inspired by https://github.com/atinylittleshell/aicmd/blob/main/packages/web/utils/openai.ts
