@@ -29,6 +29,8 @@ AI> git log --all --graph --decorate --oneline
 * 8d9c3b1 (HEAD -> master) .
 ```
 
+It has colors:
+![](bild.png)
 
 ## Installation:
 Get an OpenAI API key and put it in env variable `$OPENAI_API_KEY`. I have 
