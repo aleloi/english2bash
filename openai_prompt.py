@@ -1,5 +1,4 @@
 #! /usr/bin/python
-
 import os
 #print(os.getenv("OPENAI_API_KEY"))
 import subprocess
@@ -47,7 +46,7 @@ def call_and_print(cmd):
     if res.stderr != '':
         print()
         print(Fore.RED + 'STDERR')
-        print(Fore.YELLOW + res.stderr)
+        print(Fore.YELLOW + res.stderr + Style.RESET_ALL)
     if res.returncode != 0:
         print()
         print(Fore.RED + f'RETURN CODE: {res.returncode}' + Style.RESET_ALL)
